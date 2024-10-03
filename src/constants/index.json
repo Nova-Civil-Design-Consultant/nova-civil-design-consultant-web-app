@@ -1,0 +1,106 @@
+{
+  "document": {
+    "Navbar_Component": {
+      "navItems": [
+        { "title": "Home", "active": true },
+        { "title": "About", "active": false },
+        { "title": "Projects", "active": false },
+        { "title": "Services", "active": false },
+        { "title": "News", "active": false },
+        { "title": "Contact", "active": false }
+      ],
+      "social_media_handle": {
+        "facebook_handle": "https://www.facebook.com/profile.php?id=61566466590733&mibextid=ZbWKwL",
+        "instagram_handle": "https://www.instagram.com/nova_civil_design_consultant_?igsh=MXNoZGJ6bG41emIzdg==",
+        "linkedin_handle": "https://www.linkedin.com/in/md-ehsanullah-a1a91b169?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "x_handle": "https://x.com/mdehsan20517705?t=diUUPNQ63NoAOdSV7L6vxQ&s=09",
+        "just_dial": "https://jsdl.in/RSL-VWO1726986467"
+      }
+    },
+    "Header_Component": {
+      "heading": "Shaping the Future of Civil Design",
+      "sub_heading": "At Nova Civil Design & Consultant, we excel in delivering cutting-edge interior and exterior design solutions. Our unwavering commitment to quality and innovation has earned us a growing clientele and a reputation for excellence.",
+      "view_project_button": "view our projects"
+    },
+		"Feature_Component": {
+			"view_details_button": "View Details",
+			"first_feature": {
+				"heading": "Building the Future Together",
+				"sub_heading": "Creating state-of-the-art homes with visionary designs. Transforming spaces with innovation and precision."
+			},
+			"second_feature": {
+				"heading": "Designing Spaces That Inspire",
+				"sub_heading": "Interior and exterior designs that reflect elegance and functionality. Bringing your dream spaces to life with a personalized approach."
+			},
+			"third_feature": {
+				"heading": "Sustaining Infrastructure",
+				"sub_heading": "Expert road and infrastructure maintenance for lasting durability. Ensuring long-lasting solutions for public and private projects."
+			}
+		},
+		"About_Component": {
+			"title": "about us",
+			"description": "Recognize more about our company",
+			"first_heading": "Learn More About Nova Civil Design & Consultant",
+			"second_sub_heading": "Our experience and client-focused approach allow us to deliver designs that stand the test of time. Whether you're looking for creative interiors or robust exterior solutions, we are the trusted name for all your construction needs."
+		},
+		"Projects_Component": {
+			"title": "Explore Our Latest Projects",
+			"description": "Explore our works",
+			"sub_description": "From residential to commercial, our work speaks for itself. Discover how Nova Civil Design & Consultant is shaping the future of design.",
+			"view_all_button": "View All Projects",
+			"project_type_title": [
+				{ "title": "All", "active": true },
+				{ "title": "Buildings", "active": false },
+				{ "title": "Interior & Exterior", "active": false },
+				{ "title": "Renovate", "active": false },
+				{ "title": "Industry", "active": false },
+				{ "title": "Road", "active": false }
+			]
+		},
+		"Banner_Component": {
+			"paragraph": "At Nova Civil Design & Consultant, we believe that innovative design can create not only beautiful spaces but sustainable futures. Our clients’ satisfaction is the cornerstone of our success.",
+			"address": "Raneedeeha, Gorakhpur | Nova Civil Design & Consultant, UP, India"
+		},
+		"Articles_Component": {
+			"title": "News articles",
+			"description": "Stay Updated with the Latest Industry Trends",
+			"all_article_button": "All Articles"
+		},
+		"Result_Component": {
+			"result_items": [
+				{ "title": "Projects done", "count": "50+" },
+				{ "title": "Awards", "count": "20+" },
+				{ "title": "Total members", "count": "30+" },
+				{ "title": "Happy customers", "count": "50+" }
+			]
+		},
+		"Action_Banner_Component": {
+			"banner_question": "Ready to Bring Your Vision to Life?",
+			"banner_subheading": "Get in touch with Nova Civil Design & Consultant today to start your next project.",
+			"get_in_touch_button": "Get In Touch",
+			"email_id": "ehsanmohd66@gmail.com"
+		},
+    "Footer_Component": {
+			"home_titles": {
+				"first_title": "Home",
+				"second_title": "Services",
+				"third_title": "News",
+				"fourth_title": "Terms Of Use",
+				"fifth_title": "Privacy Policy"
+			},
+			"location_titles": {
+				"first_title": "Our location",
+				"second_title": "About",
+				"third_title": "Contact",
+				"fourth_title": "Help Center",
+				"fifth_title": "FAQs"
+			},
+			"contact_details": {
+				"address": "Raneedeeha, Deoria Road, Gorakhpur - 273202",
+				"phone_no": "+91 9810311810",
+				"email_id": "ehsanmohd66@gmail.com",
+				"privacy_text": "© 2024 Nova Civil Design & Consultant | The Future"
+			}
+		}
+  }
+}
