@@ -8,7 +8,7 @@ interface ProtectedRouteProps {
   user: any;
 }
 
-const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ role, component: Component, user }) => {
+const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ component: Component }) => {
   const session = checkSession();
 
   if (!session) {
