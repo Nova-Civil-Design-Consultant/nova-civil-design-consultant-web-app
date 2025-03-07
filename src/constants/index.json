@@ -1,4 +1,14 @@
 {
+  "credentials": [
+    {
+      "email": "admirehar@gmail.com",
+      "password": "Admire@123"
+    },
+    {
+      "email": "abc@gmail.com",
+      "password": "Abc@123"
+    }
+  ],
   "document": {
     "Navbar_Component": {
       "navItems": [
