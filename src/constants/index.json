@@ -17,7 +17,8 @@
         { "title": "Projects", "active": false },
         { "title": "Services", "active": false },
         { "title": "News", "active": false },
-        { "title": "Contact", "active": false }
+        { "title": "Contact", "active": false },
+        { "title": "Login", "active": false }
       ],
       "social_media_handle": {
         "facebook_handle": "https://www.facebook.com/profile.php?id=61566466590733&mibextid=ZbWKwL",

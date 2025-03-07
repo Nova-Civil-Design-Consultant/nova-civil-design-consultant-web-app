@@ -5,11 +5,14 @@ import {
   LogoTwitter,
   MenuOutline,
 } from "react-ionicons";
+import { useNavigate } from "react-router-dom";
 import novaLogo from "../../assets/images/novocivillogo.png";
 import constants from "../../constants/index.json";
 import Justdial_Logo from "../../assets/images/Justdial_Logo.svg";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   const openLink = (url: string) => {
     window.open(url, "_blank"); // Opens link in a new tab
   };
@@ -25,9 +28,14 @@ const Navbar = () => {
               item.active ? "text-primary" : "text-secondary"
             } font-Urbanist font-semibold text-lg cursor-pointer`}
             onClick={() =>
+            {
+              if (item.title === 'Login') {
+                navigate('/login')
+              }
               document
                 .getElementById(item.title.toLowerCase())
                 ?.scrollIntoView({ behavior: "smooth" })
+            }
             }
           >
             {item.title}

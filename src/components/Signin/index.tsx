@@ -25,7 +25,7 @@ function Copyright(props: any) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="/">
         Nova Civil Design & Consultant
       </Link>{" "}
       {new Date().getFullYear()}
@@ -34,8 +34,6 @@ function Copyright(props: any) {
   );
 }
 
-// TODO remove, this demo shouldn't need to reset the theme.
-
 const defaultTheme = createTheme();
 
 export default function SignIn({ setUser }: any) {
@@ -43,35 +41,37 @@ export default function SignIn({ setUser }: any) {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    
+
     const email = data.get("email") as string | null;
     const password = data.get("password") as string | null;
-  
+
     if (!email || !password) {
       alert("Email and password are required!");
       return;
     }
-  
+
     console.log("Entered Credentials:", email, password);
     console.log("Stored Credentials:", constants.credentials);
-  
+
     // Check if the entered credentials match any stored credentials
     const matchedUser = constants.credentials.find(
-      (cred: { email: string; password: string }) => 
+      (cred: { email: string; password: string }) =>
         cred.email === email && cred.password === password
     );
-  
+
     if (matchedUser) {
       console.log("Login successful", auth, email, password);
       const loginTime = Date.now(); // Store the current timestamp
-      localStorage.setItem("userSession", JSON.stringify({ ...matchedUser, loginTime }));
+      localStorage.setItem(
+        "userSession",
+        JSON.stringify({ ...matchedUser, loginTime })
+      );
       setUser(matchedUser); // Update user state
       navigate("/admin");
     } else {
       alert("Invalid email or password!");
     }
   };
-  
 
   return (
     <ThemeProvider theme={defaultTheme}>
