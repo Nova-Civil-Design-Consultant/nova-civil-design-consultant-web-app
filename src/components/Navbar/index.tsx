@@ -8,7 +8,7 @@ import {
   CloseOutline,
 } from "react-ionicons";
 import { useNavigate } from "react-router-dom";
-import novaLogo from "../../assets/images/novocivillogo.png";
+import novaLogo from "/nova-logo-compact.svg";
 import constants from "../../constants/index.json";
 import { NavItem } from "../../types";
 import Justdial_Logo from "../../assets/images/Justdial_Logo.svg";
@@ -58,7 +58,7 @@ const Navbar = () => {
             <img 
               src={novaLogo} 
               alt="Nova Civil Design Logo" 
-              className="cursor-pointer h-12 hover:scale-105 transition-transform duration-300" 
+              className="cursor-pointer h-10 hover:scale-105 transition-transform duration-300" 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             />
           </div>

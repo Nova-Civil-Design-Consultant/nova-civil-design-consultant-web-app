@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#CC2222;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#AA1111;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="buildingSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#CC2222;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991111;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="buildingTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6666;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="32" height="32" fill="#FFFFFF" rx="4"/>
+
+  <!-- Building Structure -->
+  <g transform="translate(4, 4)">
+    <!-- Building base (front face) -->
+    <rect x="0" y="10" width="16" height="20" fill="url(#buildingGradient)" stroke="#990000" stroke-width="0.5"/>
+    
+    <!-- Building side (right face) -->
+    <polygon points="16,10 22,6 22,26 16,30" fill="url(#buildingSide)" stroke="#770000" stroke-width="0.5"/>
+    
+    <!-- Building top -->
+    <polygon points="0,10 6,6 22,6 16,10" fill="url(#buildingTop)" stroke="#990000" stroke-width="0.5"/>
+    
+    <!-- Windows -->
+    <rect x="2" y="14" width="3" height="3" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="6" y="14" width="3" height="3" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="10" y="14" width="3" height="3" fill="#FFFFFF" opacity="0.9"/>
+    
+    <rect x="2" y="19" width="3" height="3" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="6" y="19" width="3" height="3" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="10" y="19" width="3" height="3" fill="#FFFFFF" opacity="0.9"/>
+    
+    <!-- Door -->
+    <rect x="6" y="25" width="4" height="5" fill="#660000"/>
+  </g>
+</svg>

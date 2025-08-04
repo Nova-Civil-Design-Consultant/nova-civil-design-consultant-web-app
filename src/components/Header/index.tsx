@@ -88,8 +88,18 @@ const Header = () => {
 							</div>
 						</div>
 						
-						{/* Image Section */}
-						<div className={`relative ${isVisible ? 'animate-fadeInRight' : 'opacity-0'}`} style={{animationDelay: '0.3s'}}>
+						{/* Logo and Image Section */}
+						<div className={`relative space-y-8 ${isVisible ? 'animate-fadeInRight' : 'opacity-0'}`} style={{animationDelay: '0.3s'}}>
+							{/* Main Logo Display */}
+							<div className="text-center mb-8">
+								<img
+									src="/nova-logo-main.svg"
+									alt="Nova Civil Design Logo"
+									className="mx-auto w-full max-w-md h-auto hover-lift animate-fadeInDown"
+									style={{animationDelay: '0.5s'}}
+								/>
+							</div>
+							
 							{/* Backdrop blur effect */}
 							<div className="absolute -inset-4 bg-gradient-primary rounded-3xl opacity-20 blur-xl"></div>
 							

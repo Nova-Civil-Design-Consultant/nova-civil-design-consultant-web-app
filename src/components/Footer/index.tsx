@@ -8,7 +8,7 @@ import {
   Mail,
 } from "react-ionicons";
 import constants from "../../constants/index.json";
-import novaLogo from "../../assets/images/novocivillogo.png";
+import novaLogo from "/nova-logo-compact.svg";
 import Justdial_Logo from "../../assets/images/Justdial_Logo.svg";
 
 const Footer = () => {
@@ -95,7 +95,7 @@ const Footer = () => {
               <img 
                 src={novaLogo} 
                 alt="Nova Civil Design Logo" 
-                className="w-32 lg:w-40 hover:scale-105 transition-transform duration-300"
+                className="h-12 lg:h-14 w-auto hover:scale-105 transition-transform duration-300"
               />
               <p className="font-Urbanist text-base lg:text-lg text-lightText leading-relaxed max-w-sm">
                 {constants?.document?.Header_Component?.heading}

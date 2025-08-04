@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <!-- Gradients for 3D effect -->
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#CC2222;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#AA1111;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="buildingSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#CC2222;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991111;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="buildingTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6666;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF4444;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Building 3D Structure -->
+  <g transform="translate(20, 30)" filter="url(#shadow)">
+    <!-- Building base (front face) -->
+    <rect x="0" y="40" width="80" height="100" fill="url(#buildingGradient)" stroke="#990000" stroke-width="1"/>
+    
+    <!-- Building side (right face) -->
+    <polygon points="80,40 110,20 110,120 80,140" fill="url(#buildingSide)" stroke="#770000" stroke-width="1"/>
+    
+    <!-- Building top -->
+    <polygon points="0,40 30,20 110,20 80,40" fill="url(#buildingTop)" stroke="#990000" stroke-width="1"/>
+    
+    <!-- Windows on front face -->
+    <rect x="10" y="55" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="25" y="55" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="40" y="55" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="55" y="55" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    
+    <rect x="10" y="75" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="25" y="75" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="40" y="75" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="55" y="75" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    
+    <rect x="10" y="95" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="25" y="95" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="40" y="95" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="55" y="95" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    
+    <rect x="10" y="115" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="25" y="115" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="40" y="115" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="55" y="115" width="12" height="12" fill="#FFFFFF" opacity="0.9"/>
+    
+    <!-- Windows on side face -->
+    <polygon points="85,50 95,42 95,52 85,60" fill="#FFFFFF" opacity="0.7"/>
+    <polygon points="85,70 95,62 95,72 85,80" fill="#FFFFFF" opacity="0.7"/>
+    <polygon points="85,90 95,82 95,92 85,100" fill="#FFFFFF" opacity="0.7"/>
+    <polygon points="85,110 95,102 95,112 85,120" fill="#FFFFFF" opacity="0.7"/>
+    
+    <!-- Door -->
+    <rect x="30" y="115" width="20" height="25" fill="#660000"/>
+  </g>
+
+  <!-- NOVA Text -->
+  <g transform="translate(160, 50)">
+    <text x="0" y="60" font-family="Arial Black, sans-serif" font-size="72" font-weight="900" fill="#DC2626" letter-spacing="-2px">NOVA</text>
+  </g>
+
+  <!-- Tagline -->
+  <g transform="translate(160, 130)">
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2563EB" letter-spacing="1px">BUILDING YOUR DREAM HOME BETTER</text>
+  </g>
+
+  <!-- Decorative line with more spacing -->
+  <line x1="160" y1="120" x2="580" y2="120" stroke="#DC2626" stroke-width="3"/>
+</svg>
