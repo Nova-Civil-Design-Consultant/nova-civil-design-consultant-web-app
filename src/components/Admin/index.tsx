@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import { AdminDashboardProps } from "../../types";
 
-const AdminDashboard = ({ setUser }: { setUser: (user: any) => void }) => {
+const AdminDashboard = ({ setUser }: AdminDashboardProps) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {

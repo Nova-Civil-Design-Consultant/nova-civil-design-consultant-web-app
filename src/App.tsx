@@ -14,9 +14,10 @@ import AdminDashboard from "./components/Admin";
 import SignIn from "./components/Signin";
 import ProtectedRoute from "./ProtectedRoutes";
 import checkSession from './helper/index';
+import { User } from "./types";
 
 const App = () => {
-  const [user, setUser] = useState(() => checkSession()); // Load session from localStorage
+  const [user, setUser] = useState<User | null>(() => checkSession()); // Load session from localStorage
   return (
     <Router>
       <Routes>

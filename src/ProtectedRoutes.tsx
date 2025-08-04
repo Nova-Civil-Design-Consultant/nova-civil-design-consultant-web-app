@@ -1,12 +1,9 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 import checkSession from "./helper";
+import { ProtectedRouteProps } from "./types";
 
-interface ProtectedRouteProps {
-  role: string;
-  component: React.ElementType;
-  user: any;
-}
+// Using the imported type interface
 
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ component: Component }) => {
   const session = checkSession();

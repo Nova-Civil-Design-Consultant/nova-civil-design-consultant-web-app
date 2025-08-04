@@ -15,8 +15,9 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { auth } from "../../firebase/config.js";
 import { useNavigate } from "react-router-dom";
 import constants from "../../constants/index.json";
+import { SignInProps, CopyrightProps } from "../../types";
 
-function Copyright(props: any) {
+function Copyright(props: CopyrightProps) {
   return (
     <Typography
       variant="body2"
@@ -36,7 +37,7 @@ function Copyright(props: any) {
 
 const defaultTheme = createTheme();
 
-export default function SignIn({ setUser }: any) {
+export default function SignIn({ setUser }: SignInProps) {
   const navigate = useNavigate();
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -62,11 +63,12 @@ export default function SignIn({ setUser }: any) {
     if (matchedUser) {
       console.log("Login successful", auth, email, password);
       const loginTime = Date.now(); // Store the current timestamp
+      const userWithLoginTime = { email: matchedUser.email, loginTime };
       localStorage.setItem(
         "userSession",
-        JSON.stringify({ ...matchedUser, loginTime })
+        JSON.stringify(userWithLoginTime)
       );
-      setUser(matchedUser); // Update user state
+      setUser(userWithLoginTime); // Update user state
       navigate("/admin");
     } else {
       alert("Invalid email or password!");

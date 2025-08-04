@@ -1,4 +1,6 @@
-const checkSession = () => {
+import { UserSession } from "../types";
+
+const checkSession = (): UserSession | null => {
   const session = localStorage.getItem("userSession");
   if (session) {
     const { loginTime } = JSON.parse(session);

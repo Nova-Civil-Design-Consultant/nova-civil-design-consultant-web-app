@@ -8,6 +8,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import novaLogo from "../../assets/images/novocivillogo.png";
 import constants from "../../constants/index.json";
+import { NavItem } from "../../types";
 import Justdial_Logo from "../../assets/images/Justdial_Logo.svg";
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
     <div className="w-full lg:px-12 p-5 lg:h-24 h-20 border-b border-navBorder flex items-center justify-between">
       <img src={novaLogo} alt="logo" className="cursor-pointer" />
       <div className="lg:flex hidden items-center gap-8">
-        {constants?.document?.Navbar_Component?.navItems.map((item: any) => (
+        {constants?.document?.Navbar_Component?.navItems.map((item: NavItem) => (
           <div
             key={item.title}
             className={`${
